@@ -20,9 +20,9 @@
         });   
         
         socket.emit('mensaje', {  nonbre: 'Claudio'});
-        socket.on('mensaje', function(payload){  
+        socket.on('nuevo-mensaje', function(payload){  
             console.log('ESCUCNAHD', payload)
-    });
+        });
     </script>
     
 </body>

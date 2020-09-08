@@ -12,6 +12,7 @@ io.on('connection', client => {
     });
 
     client.on('emitir-mensaje',(payload) => {
+        console.log(payload);
 
         // io.emit('nuevo-mensaje', payload);  // EMITE A TODOS
         client.broadcast.emit('nuevo-mensaje', payload);
