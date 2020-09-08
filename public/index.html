@@ -23,6 +23,11 @@
         socket.on('nuevo-mensaje', function(payload){  
             console.log('ESCUCNAHD', payload)
         });
+
+        socket.on('active-bands', function(bands){  
+            console.clear();
+            console.table(bands)
+        });        
     </script>
     
 </body>
